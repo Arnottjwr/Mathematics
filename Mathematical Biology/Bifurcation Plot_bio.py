@@ -1,5 +1,6 @@
 """
 Plots a Bifurcation Diagram of the Logistic map
+Credit: https://ipython-books.github.io 
 """
 
 
