@@ -1,0 +1,31 @@
+import numpy as np 
+import matplotlib.pyplot as plt
+plt.rcParams.update({'font.size': 10})
+
+# Function 
+def logistic(x, r):
+    return r*x*(1-x)
+
+# Inital Data 
+r = 0.5
+initial = 0.5
+n = 75
+
+# Arrays 
+x = np.linspace(0,n,n)
+y = np.zeros_like(x)
+y[0] = logistic(initial, r)
+
+# Iterate 
+for i in range(1,n):
+    y[i] = logistic(y[i-1],r)
+
+# Plot   
+fig,ax = plt.subplots(1,figsize = (10,6))
+ax.set_ylim(0,1)
+ax.set_title(f'{n} iterations of $f(N) = rN(1-N) $ with r = {r} and inital point = {initial}')
+ax.set_xlabel('n')
+ax.set_ylabel('N')
+ax.plot(x,y,'b')
+ax.grid()
+plt.show()
