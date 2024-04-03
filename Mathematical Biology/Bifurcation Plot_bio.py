@@ -2,8 +2,6 @@
 Plots a Bifurcation Diagram of the Logistic map
 Credit: https://ipython-books.github.io 
 """
-
-
 # Import necessary libraries
 import numpy as np 
 import matplotlib.pyplot as plt 
