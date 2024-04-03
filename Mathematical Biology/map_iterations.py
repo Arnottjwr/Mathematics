@@ -4,7 +4,6 @@ The logistic map displays rich dynamical behaviour. As the control parameter r (
 we observe period doubling bifurcations. See the Bifurcation diagram plot for code to plot a Bifurcation diagram 
 '''
 
-
 import numpy as np 
 import matplotlib.pyplot as plt
 plt.rcParams.update({'font.size': 10})
