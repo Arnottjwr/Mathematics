@@ -1,8 +1,9 @@
+# Plot to illustrate Tangent Bifurcation 
+# Can vary values of r. Tangent point is r = 1 + sqrt(8)
+
 import numpy as np
 import matplotlib.pyplot as plt 
 plt.rcParams.update({'font.size': 10})
-
-# Plot to illustrate Tangent Bifurcation 
 
 # Logistic Map
 def logistic(x,r):
