@@ -20,7 +20,7 @@ n = 75 # Iterations
 ### Arrays 
 x = np.linspace(0,n,n)
 y = np.zeros_like(x)
-y[0] = logistic(initial, r)
+y[0] = initial
 
 ### Iterate 
 for i in range(1,n):
