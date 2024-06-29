@@ -1,5 +1,5 @@
 ###########################################
-from Eu
+from Eulerian_functions import Eulerian_circuit_1, Eulerian_circuit_2, Eulerian_circuit_3, all_positive_degree_vertices_connected(
 # Examples 
 import networkx as nx
 import matplotlib.pyplot as plt
