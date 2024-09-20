@@ -1,4 +1,6 @@
 from WaveFunctions import plucked_string
+import numpy as np
+import matplotlib.pyplot as plt
 
 L = 65 
 c = 10
