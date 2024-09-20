@@ -1,5 +1,5 @@
 import numpy as np 
-from scipy.fft import fft,fftfreq
+from scipy import fftpack
 
 def get_frequency(signal,sr):
     """
@@ -19,8 +19,8 @@ def get_frequency(signal,sr):
     N = len(signal)
     T = 1.0 / sr
     y = signal[:N]
-    yf = fft(y)
-    xf = fftfreq(N, T)[:N//2]    
+    yf = fftpack.fft(y)
+    xf = fftpack.fftfreq(N, T)[:N//2]    
     m = 2.0 / N * np.abs(yf[:N // 2])
     return xf, m        
 
