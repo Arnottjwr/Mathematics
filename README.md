@@ -1,4 +1,4 @@
-# Mathematical-Codes
+# Mathematics
 
 Codes collected from a variety of different mathematical topics, mainly from university coursework
 
