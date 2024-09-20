@@ -72,16 +72,6 @@ class EulerianFunctions:
                 
         return circuit
 
-    """
-        Parameters
-        ------------
-        G - a connected networkx graph 
-        
-        Returns
-        ------------
-        circuit - a list of nodes in the graph which dictate an Eulerian circuit 
-
-        """
     def eulerian_circuit_check_edges(self, graph):
         """
         Finds an Eulerian circuit by creating a stack of unseen neighbours and popping them from the queue to form a circuit
@@ -112,8 +102,6 @@ class EulerianFunctions:
                 
         return circuit
 
-    ###########################################
-
     def all_positive_degree_vertices_connected(self, graph):
         """
         Checks to see if all vertices of positive degree are connected, using a Breath-first traversal.
@@ -133,7 +121,7 @@ class EulerianFunctions:
                 seen.add(current_vertex)
                 queue.extend(graph[current_vertex])          # Add all of the neighbours of current_vertex to the end of the queue.
         
-        if len(seen) == len(pos_deg):                    #  
+        if len(seen) == len(pos_deg): 
                     
             return True
         else:  
