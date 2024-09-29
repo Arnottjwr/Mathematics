@@ -13,10 +13,11 @@ import networkx as nx
 import numpy as np
 class EulerianFunctions:
 
-    def eulerian_circuit_delete_edges(self, graph):
+    def eulerian_circuit_delete_edges(self, graph: nx.Graph) -> list:
         """
         Finds an Eulerian Circuit by creating list of vertices from the NetworkX Graph and removing them as seen
 
+        :param graph: A networkx graph
         :return: a list of nodes in the graph which form an Eulerian circuit
         """
 
@@ -42,10 +43,11 @@ class EulerianFunctions:
         return circuit
 
 
-    def eulerian_circuit_adjacency_matrix(self, graph):
+    def eulerian_circuit_adjacency_matrix(self, graph: nx.Graph) -> list:
         """
         finds an Eulerian Circuit by using an adjacency matrix to dtermine whether edges have been seen already
 
+        :param graph: A networkx graph
         :return:a list of nodes in the graph which form an Eulerian circuit
         """
         if not nx.is_eulerian(graph):                          # Check the graph is Eulerian  
@@ -72,10 +74,11 @@ class EulerianFunctions:
                 
         return circuit
 
-    def eulerian_circuit_check_edges(self, graph):
+    def eulerian_circuit_check_edges(self, graph: nx.Graph) -> list:
         """
         Finds an Eulerian circuit by creating a stack of unseen neighbours and popping them from the queue to form a circuit
 
+        :param graph: A networkx graph
         :return: a list of nodes in the graph which form an Eulerian circuit
         """
 
@@ -102,10 +105,11 @@ class EulerianFunctions:
                 
         return circuit
 
-    def all_positive_degree_vertices_connected(self, graph):
+    def all_positive_degree_vertices_connected(self, graph: nx.Graph) -> bool:
         """
         Checks to see if all vertices of positive degree are connected, using a Breath-first traversal.
-
+        
+        :param graph: A networkx graph
         :return: bool value depending if all vertices are connceted
         """
         pos_deg = [i for i in graph if len(list(graph[i])) > 0]  # Create a list of the positive degree vertices 
