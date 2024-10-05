@@ -45,7 +45,7 @@ class EulerianFunctions:
 
     def eulerian_circuit_adjacency_matrix(self, graph: nx.Graph) -> list:
         """
-        finds an Eulerian Circuit by using an adjacency matrix to dtermine whether edges have been seen already
+        finds an Eulerian Circuit by using an adjacency matrix to determine whether edges have been seen already
 
         :param graph: A networkx graph
         :return:a list of nodes in the graph which form an Eulerian circuit
